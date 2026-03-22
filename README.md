@@ -129,26 +129,20 @@ INFO:     Application startup complete.
 
 ### Search UI
 
-1️⃣ Open the web app in your browser (http://localhost:8000).
-2️⃣ Type a query, press **Search** or hit **Enter**. The top 3 matching documents are shown with their similarity scores and a text snippet.
-3️⃣ To reprocess the documents folder after adding new files, click **Rebuild Index**.
+[Access the web app](https://product-search-agent-project.onrender.com)  
+
+1️⃣ Open the web app in your browser.    
+2️⃣ Type a query, press **Search** or hit **Enter**. The top 3 matching documents are shown with their similarity scores and a text snippet.    
+3️⃣ To reprocess the documents folder after adding new files, click **Rebuild Index**.    
 
 ### API Endpoints
 
 #### `GET /search?q=<query>`
 
-Search the document corpus and return the top 3 most relevant results.
-
-**Parameters:**
-
-| Parameter | Type   | Required | Description      |
-|-----------|--------|----------|------------------|
-| `q`       | string | Yes      | The search query |
-
 **Example:**
 
 ```bash
-curl "http://localhost:8000/search?q=artificial+intelligence+in+finance"
+curl "http://localhost:8000/search?q=artificial intelligence in finance"
 ```
 
 **Response:**
@@ -176,7 +170,6 @@ curl "http://localhost:8000/search?q=artificial+intelligence+in+finance"
 }
 ```
 
-<br>
 
 #### `POST /index`
 
@@ -196,7 +189,7 @@ curl -X POST "http://localhost:8000/index"
 }
 ```
 
----
+
 
 #### `GET /`
 
