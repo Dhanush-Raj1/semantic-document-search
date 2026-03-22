@@ -85,7 +85,7 @@ semantic-search/
 
 ### Prerequisites
 
-- Python 3.10 or higher
+- Python 3.10 
 - pip
 
 ### 1️⃣ Clone the repository
@@ -178,7 +178,7 @@ Rebuild the TF-IDF index. Use this after adding new `.txt` files to the `documen
 **Example:**
 
 ```bash
-curl -X POST "http://localhost:8000/index"
+http://localhost:8000/index
 ```
 
 **Response:**
@@ -195,7 +195,6 @@ curl -X POST "http://localhost:8000/index"
 
 Serves the search UI at `http://localhost:8000`.
 
----
 
 #### `GET /docs`
 
@@ -205,7 +204,7 @@ FastAPI's auto-generated interactive API documentation (Swagger UI):
 http://localhost:8000/docs
 ```
 
----
+
 
 ## Sample API Calls
 
