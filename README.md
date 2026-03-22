@@ -1,14 +1,15 @@
-<h1 align="center">🛍️ AI-Powered Product Search Agent</h1>
+<h1 align="center">🛍️ Semantic Document Search Engine</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=black&labelColor=white&color=red">
-  <img src="https://img.shields.io/badge/FastAPI#009688-?style=for-the-badge&logo=FastAPI&logoColor=black&labelColor=white&color=purple">
+  <img src="https://img.shields.io/badge/FastAPI-009688-?style=for-the-badge&logo=FastAPI&logoColor=black&labelColor=white&color=purple">
   <img src="https://img.shields.io/badge/HTML-E44D26?style=for-the-badge&logo=html5&logoColor=black&labelColor=white&color=green">
   <img src="https://img.shields.io/badge/CSS-663399?style=for-the-badge&logo=CSS&logoColor=black&labelColor=white&color=orange">
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=black&labelColor=white&color=cyan" />
 </p>
   
-<h3 align="center"> A backend search engine that finds the most relevant documents for a user query using **custom TF-IDF vectorization** and **Cosine Similarity** — implemented entirely from scratch without any external NLP or AI libraries.
+<h3 align="center"> 
+  A backend search engine that finds the most relevant documents for a user query using **custom TF-IDF vectorization** and **Cosine Similarity**.
 </h3>
 
 ---
