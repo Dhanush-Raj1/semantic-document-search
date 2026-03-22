@@ -255,4 +255,3 @@ pydantic     — response validation and serialization
 numpy        — array operations for TF-IDF vectors
 ```
 
-All text processing logic (tokenization, TF-IDF, cosine similarity) uses **only Python standard library**.
