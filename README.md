@@ -222,7 +222,7 @@ http://localhost:8000/docs
 
 <br>
 
-## Sample API Calls
+# 🛠️ Sample API Calls
 
 ```bash
 # Search for AI topics
@@ -241,9 +241,9 @@ curl "http://localhost:8000/search?q=ai in health care"
 curl -X POST "http://localhost:8000/index"
 ```
 
----
+<br>
 
-## Constraints Compliance
+# 📄 Constraints Compliance
 
 | Requirement | Status | Details |
 |---|---|---|
@@ -258,9 +258,9 @@ curl -X POST "http://localhost:8000/index"
 | `POST /index` bonus endpoint | ✅ | Rebuilds index without server restart |
 | Minimal UI | ✅ | `static/index.html` served at `/` |
 
----
+<br>
 
-## Dependencies
+## ⛓️ Dependencies
 
 ```
 fastapi      — web framework
