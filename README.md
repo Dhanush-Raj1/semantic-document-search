@@ -127,7 +127,7 @@ INFO:     Application startup complete.
 
 # 🌐 Usage Guide  
 
-### Search UI
+### 1. Search UI
 
 [Access the web app](https://product-search-agent-project.onrender.com)  
 
@@ -135,7 +135,9 @@ INFO:     Application startup complete.
 2️⃣ Type a query, press **Search** or hit **Enter**. The top 3 matching documents are shown with their similarity scores and a text snippet.    
 3️⃣ To reprocess the documents folder after adding new files, click **Rebuild Index**.    
 
-### API Endpoints
+<br>
+
+### 2. API Endpoints (http://localhost:8000)
 
 #### `GET /search?q=<query>`
 
