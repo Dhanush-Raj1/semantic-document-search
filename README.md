@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=black&labelColor=white&color=red">
-  <img src="https://img.shields.io/badge/FastAPI-009688-?style=for-the-badge&logo=fastapi&logoColor=black&labelColor=white&color=purple">
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=black&labelColor=white&color=purple">
   <img src="https://img.shields.io/badge/HTML-E44D26?style=for-the-badge&logo=html5&logoColor=black&labelColor=white&color=green">
   <img src="https://img.shields.io/badge/CSS-663399?style=for-the-badge&logo=CSS&logoColor=black&labelColor=white&color=orange">
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=black&labelColor=white&color=cyan" />
@@ -17,7 +17,7 @@
 ## 🚀 Live Applicaiton
 🌐 The application is deployed and live  
   
-👉 [Access the web app here](https://product-search-agent-project.onrender.com)  
+👉 [Access the web app here](https:/t.onrender.com)  
   
 > [!NOTE]  
 > The web app may take 1-2 minutes to load.  
@@ -28,7 +28,7 @@
 <br>
 
 
-## How It Works
+# 📌 How It Works
 
 ### TF-IDF Vectorization
 
@@ -62,18 +62,18 @@ A score of `1.0` means perfect match; `0.0` means no shared vocabulary. All docu
 
 ---
 
-## Project Structure
+# 📂 Project Structure
 
 ```
 semantic-search/
-├── documents/          ← corpus of .txt files
-├── src/
+├── 📂documents/          ← corpus of .txt files
+├── 📂src/
 │   ├── utils.py        ← tokenization and stop word filtering
 │   ├── indexer.py      ← TF-IDF logic and DocumentIndex class
 │   ├── searcher.py     ← cosine similarity and ranking
 │   ├── models.py       ← Pydantic response models
 │   └── main.py         ← FastAPI app with all endpoints
-├── static/
+├── 📂static/
 │   └── index.html      ← search UI
 ├── requirements.txt
 └── README.md
@@ -81,21 +81,21 @@ semantic-search/
 
 ---
 
-## Setup Instructions
+# 🚀 Setup Instructions
 
 ### Prerequisites
 
-- Python 3.9 or higher
+- Python 3.10 or higher
 - pip
 
-### 1. Clone the repository
+### 1️⃣ Clone the repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Dhanush-Raj1/semantic-document-search.git
 cd semantic-search
 ```
 
-### 2. Create a virtual environment
+### 2️⃣ Create a virtual environment
 
 ```bash
 python -m venv venv
@@ -103,17 +103,13 @@ source venv/bin/activate        # Linux / macOS
 venv\Scripts\activate           # Windows
 ```
 
-### 3. Install dependencies
+### 3️⃣ Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Add documents
-
-Place `.txt` files in the `documents/` folder. The engine reads all `.txt` files from this directory automatically.
-
-### 5. Start the server
+### 4️⃣ Start the server
 
 ```bash
 uvicorn src.main:app --reload --host 0.0.0.0 --port 8000
@@ -131,19 +127,13 @@ The TF-IDF index is built automatically at startup.
 
 ---
 
-## Usage
+# 🌐 Usage Guide  
 
 ### Search UI
 
-Open your browser and go to:
-
-```
-http://localhost:8000
-```
-
-Type a query, press **Search** or hit **Enter**. The top 3 matching documents are shown with their similarity scores and a text snippet.
-
-To reprocess the documents folder after adding new files, click **Rebuild Index**.
+1️⃣ Open the web app in your browser (http://localhost:8000).
+2️⃣ Type a query, press **Search** or hit **Enter**. The top 3 matching documents are shown with their similarity scores and a text snippet.
+3️⃣ To reprocess the documents folder after adding new files, click **Rebuild Index**.
 
 ### API Endpoints
 
@@ -230,16 +220,16 @@ http://localhost:8000/docs
 
 ```bash
 # Search for AI topics
-curl "http://localhost:8000/search?q=machine+learning+neural+networks"
+curl "http://localhost:8000/search?q=machine learning"
 
 # Search for finance topics
-curl "http://localhost:8000/search?q=stock+market+investment+strategy"
+curl "http://localhost:8000/search?q=artificial intelligence"
 
 # Search for health topics
-curl "http://localhost:8000/search?q=cardiovascular+disease+prevention"
+curl "http://localhost:8000/search?q=ai in finance"
 
 # Multi-word natural language query
-curl "http://localhost:8000/search?q=how+does+deep+learning+work"
+curl "http://localhost:8000/search?q=ai in health care"
 
 # Rebuild index after adding new documents
 curl -X POST "http://localhost:8000/index"
