@@ -27,10 +27,16 @@
   
 <br>
 
+# 📖 Overview
+Semantic Document Search Engine is a web application that allows users to search through a collection of text documents and instantly retrieve the most relevant results for any query. It processes and indexes documents from a local folder, then uses custom-built search algorithms to rank and return the top 3 matching documents along with a similarity score and a text preview.  
+
+The application is built with a Python FastAPI backend and a clean HTML/CSS/JS frontend, making it accessible directly from the browser with no additional setup required.  
+
+<br>
 
 # 📌 How It Works
 
-### TF-IDF Vectorization
+### 🔰 TF-IDF Vectorization
 
 Every document and query is converted into a numerical vector using two components:
 
@@ -50,7 +56,7 @@ where `N` = total documents and `df` = number of documents containing the term.
 
 **TF-IDF** = TF × IDF — gives each term a weight reflecting how informative it is for a specific document.
 
-### Cosine Similarity
+### 🔰 Cosine Similarity
 
 The similarity between the query vector and each document vector is:
 
@@ -177,11 +183,19 @@ curl "http://localhost:8000/search?q=artificial intelligence in finance"
 
 Rebuild the TF-IDF index. Use this after adding new `.txt` files to the `documents/` folder without restarting the server.
 
-**Example:**
+> [!IMPORTANT]
+> This is a `POST` endpoint. Visiting `http://localhost:8000/index` directly in the browser will return `{"detail": "Method Not Allowed"}` because browsers make `GET` requests by default. Use one of the methods below to trigger it.
 
+**Via curl:**
 ```bash
-http://localhost:8000/index
+curl -X POST "http://localhost:8000/index"
 ```
+
+**Via the UI:**
+Click the **Rebuild Index** button on the search page — it sends the correct `POST` request automatically.
+
+**Via Swagger UI:**
+Go to `http://localhost:8000/docs`, find the `POST /index` endpoint, and click **Execute**.
 
 **Response:**
 
@@ -208,7 +222,7 @@ http://localhost:8000/docs
 
 <br>
 
-## Sample API Calls
+# 🛠️ Sample API Calls
 
 ```bash
 # Search for AI topics
@@ -227,9 +241,9 @@ curl "http://localhost:8000/search?q=ai in health care"
 curl -X POST "http://localhost:8000/index"
 ```
 
----
+<br>
 
-## Constraints Compliance
+# 📄 Constraints Compliance
 
 | Requirement | Status | Details |
 |---|---|---|
@@ -244,9 +258,9 @@ curl -X POST "http://localhost:8000/index"
 | `POST /index` bonus endpoint | ✅ | Rebuilds index without server restart |
 | Minimal UI | ✅ | `static/index.html` served at `/` |
 
----
+<br>
 
-## Dependencies
+# ⛓️ Dependencies
 
 ```
 fastapi      — web framework
