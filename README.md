@@ -206,7 +206,7 @@ FastAPI's auto-generated interactive API documentation (Swagger UI):
 http://localhost:8000/docs
 ```
 
-
+<br>
 
 ## Sample API Calls
 
