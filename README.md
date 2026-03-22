@@ -27,10 +27,16 @@
   
 <br>
 
+# 📖 Overview
+Semantic Document Search Engine is a web application that allows users to search through a collection of text documents and instantly retrieve the most relevant results for any query. It processes and indexes documents from a local folder, then uses custom-built search algorithms to rank and return the top 3 matching documents along with a similarity score and a text preview.  
+
+The application is built with a Python FastAPI backend and a clean HTML/CSS/JS frontend, making it accessible directly from the browser with no additional setup required.  
+
+<br>
 
 # 📌 How It Works
 
-### TF-IDF Vectorization
+### 🔰 TF-IDF Vectorization
 
 Every document and query is converted into a numerical vector using two components:
 
@@ -50,7 +56,7 @@ where `N` = total documents and `df` = number of documents containing the term.
 
 **TF-IDF** = TF × IDF — gives each term a weight reflecting how informative it is for a specific document.
 
-### Cosine Similarity
+### 🔰 Cosine Similarity
 
 The similarity between the query vector and each document vector is:
 
