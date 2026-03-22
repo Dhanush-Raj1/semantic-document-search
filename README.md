@@ -183,11 +183,19 @@ curl "http://localhost:8000/search?q=artificial intelligence in finance"
 
 Rebuild the TF-IDF index. Use this after adding new `.txt` files to the `documents/` folder without restarting the server.
 
-**Example:**
+> [!IMPORTANT]
+> This is a `POST` endpoint. Visiting `http://localhost:8000/index` directly in the browser will return `{"detail": "Method Not Allowed"}` because browsers make `GET` requests by default. Use one of the methods below to trigger it.
 
+**Via curl:**
 ```bash
-http://localhost:8000/index
+curl -X POST "http://localhost:8000/index"
 ```
+
+**Via the UI:**
+Click the **Rebuild Index** button on the search page — it sends the correct `POST` request automatically.
+
+**Via Swagger UI:**
+Go to `http://localhost:8000/docs`, find the `POST /index` endpoint, and click **Execute**.
 
 **Response:**
 
