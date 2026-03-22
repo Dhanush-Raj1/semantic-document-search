@@ -12,7 +12,7 @@
   A backend search engine that finds the most relevant documents for a user query using custom TF-IDF vectorization and Cosine Similarity.
 </h3>
 
----
+<br>
 
 ## 🚀 Live Applicaiton
 🌐 The application is deployed and live  
@@ -60,7 +60,7 @@ cosine(A, B) = dot(A, B) / (|A| × |B|)
 
 A score of `1.0` means perfect match; `0.0` means no shared vocabulary. All documents are scored and the top 3 are returned.
 
----
+<br>
 
 # 📂 Project Structure
 
@@ -79,7 +79,7 @@ semantic-search/
 └── README.md
 ```
 
----
+<br>
 
 # 🚀 Setup Instructions
 
@@ -123,9 +123,7 @@ INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 ```
 
-The TF-IDF index is built automatically at startup.
-
----
+<br>
 
 # 🌐 Usage Guide  
 
@@ -178,7 +176,7 @@ curl "http://localhost:8000/search?q=artificial+intelligence+in+finance"
 }
 ```
 
----
+<br>
 
 #### `POST /index`
 
