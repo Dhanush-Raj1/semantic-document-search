@@ -260,7 +260,7 @@ curl -X POST "http://localhost:8000/index"
 
 <br>
 
-## ⛓️ Dependencies
+# ⛓️ Dependencies
 
 ```
 fastapi      — web framework
