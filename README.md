@@ -17,7 +17,7 @@
 ## 🚀 Live Applicaiton
 🌐 The application is deployed and live  
   
-👉 [Access the web app here](https:/t.onrender.com)  
+👉 [Access the web app here](https://semantic-document-search.onrender.com/)  
   
 > [!NOTE]  
 > The web app may take 1-2 minutes to load.  
@@ -135,7 +135,7 @@ INFO:     Application startup complete.
 
 ### 1. Search UI
 
-[Access the web app](https://product-search-agent-project.onrender.com)  
+[Access the web app](https://semantic-document-search.onrender.com/)  
 
 1️⃣ Open the web app in your browser.    
 2️⃣ Type a query, press **Search** or hit **Enter**. The top 3 matching documents are shown with their similarity scores and a text snippet.    
