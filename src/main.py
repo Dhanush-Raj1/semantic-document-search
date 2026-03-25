@@ -31,3 +31,7 @@ def reindex():
     index.build()
     return {"message": "Index rebuilt successfully"}
 
+
+@app.get("/health")
+def health_check():
+    return {"status": "ok"}
