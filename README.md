@@ -14,19 +14,6 @@
 
 <br>
 
-## 🚀 Live Applicaiton
-🌐 The application is deployed and live  
-  
-👉 [Access the web app here](https://semantic-document-search.onrender.com/)  
-  
-> [!NOTE]  
-> The web app may take 1-2 minutes to load.  
-  
-> [!TIP]  
-> For the best experience, please refer to the [Usage Guide](#-usage-guide) section below to learn how to navigate and use the web app effectively.
-  
-<br>
-
 # 📖 Overview
 Semantic Document Search Engine is a web application that allows users to search through a collection of text documents and instantly retrieve the most relevant results for any query. It processes and indexes documents from a local folder, then uses custom-built search algorithms to rank and return the top 3 matching documents along with a similarity score and a text preview.  
 
@@ -134,8 +121,6 @@ INFO:     Application startup complete.
 # 🌐 Usage Guide  
 
 ### 1. Search UI
-
-[Access the web app](https://semantic-document-search.onrender.com/)  
 
 1️⃣ Open the web app in your browser.    
 2️⃣ Type a query, press **Search** or hit **Enter**. The top 3 matching documents are shown with their similarity scores and a text snippet.    
